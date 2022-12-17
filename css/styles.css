@@ -1,0 +1,709 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --color-primario: #2372a3;
+    --color-secundario: #000000;
+    --color-terciario: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*ESTILOS DEL MENU*/
+.contenedor-header{
+    /*background-color: var(--color-primario);*/
+    background-color: rgb(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-top: 2px solid var(--color-terciario);
+    border-bottom: 2px solid var(--color-terciario);
+}
+.contenedor-header header{
+    max-width: 1200px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header .logo{
+    background-color:var(--color-terciario);
+    padding: 8px;
+    border-radius: 5px;
+}
+.contenedor-header .logo a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--color-primario);
+    font-weight: 600;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header ul li{
+    padding: 5px;
+    background-color: var(--color-primario);
+    border-left: 2px solid var(--color-secundario);
+    transition: .5s;
+    cursor: pointer;
+    margin: 2px;
+}
+.contenedor-header header ul li:hover{
+    /*background-color: var(--color-secundario);*/
+    border-top:1.2px solid var(--color-terciario);
+    border-bottom:1.2px solid var(--color-terciario);
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: var(--color-terciario);
+    text-decoration: none;
+    padding: 8px;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.nav-responsive{
+    background-color: var(--color-primario);
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: none;
+}
+.nav-responsive:hover{
+    color: var(--color-terciario);
+}
+/*ESTILOS DEL INICIO*/
+.inicio{
+    background-color: var(--color-primario);
+    height: 100vh;
+    color: var(--color-terciario);
+    display: flex;
+    align-items: center;
+}
+.contenido-banner h1 {
+    position: relative;
+    animation-name: moveToRight;
+    animation-duration: 3s;
+  }
+
+.contenedor-header .logo a {
+    position: relative;
+    animation-name: moveToleft;
+    animation-duration: 3s;
+  }
+
+.inicio .contenido-banner{
+    padding:35px 0;
+    /*background-color: rgb(0, 0, 0, .8);*/
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.inicio .contenido-banner{
+    margin-top: 40px;
+    display: block;
+    margin: auto;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+}
+.inicio .contenido-banner h2{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;  
+    font-weight: 500;  
+}
+.inicio .contenido-banner .redes a{
+    color: var(--color-terciario);
+    display: block;
+    text-decoration: none;
+    border: 2px solid var(--color-secundario);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top: 12px;
+    border-radius: 4px;
+    transition: .5s;
+}
+.inicio .contenido-banner .redes a:hover {
+    background-color: var(--color-secundario);
+}
+
+/*FIN ESTILOS DEL INICIO*/
+
+
+/* ESTILOS SOBRE MI*/
+.sobremi{
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    padding: 70px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;  
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px;
+}
+.sobremi .contenido-seccion p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom:20px;
+    text-align: left;
+}
+.sobremi .contenido-seccion p span{
+    color:var(--color-primario);
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+    
+}
+.sobremi .fila .img{
+    background-color: red;
+    width: 50%;
+}
+.sobremi .fila.img img{
+    width: 100%;
+    max-width: 100%;
+}
+.sobremi .fila .col{
+    width: 50%;
+    font-weight: 500;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 8px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: var(--color-primario);
+    width: 120px;
+}
+.sobremi .fila .col ul li span{
+    background-color: var(--color-primario);
+    padding:3px ;
+    font-weight: bold;
+    border-radius: 4px;
+   color: var(--color-terciario);
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    top: 5px;
+    margin-bottom: 10px;
+    color: var(--color-terciario);   
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: var(--color-primario);
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    border: 2px solid var(--color-secundario);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    padding: 10px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-secundario);
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+.sobremi button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*FIN ESTILOS SOBRE MI*/
+
+
+/* ESTILOS SKILLS */
+.skills{
+    background-color:var(--color-primario);
+    color: var(--color-secundario);
+    padding: 70px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;  
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 18px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 35px;
+    color: var(--color-terciario);
+}
+.skills .skill > span{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.skills .skill .barra-skill{
+    height:8px;
+    width: 80%;
+    background-color:var(--color-secundario);
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: var(--color-terciario);
+    position: absolute;
+    top:0;
+    left:0;
+    height: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    border-radius: 4px;
+    text-align: center;
+    top:-20px;
+    right: -15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-terciario);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+/* KEYFRAMES SKILLS SOPORTE INFORMATICO*/
+.skills .skill .ensa{
+    width: 0%;
+    animation: 2s ensa forwards; 
+}
+@keyframes ensa{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+.skills .skill .mlf{
+    width: 0%;
+    animation: 2s mlf forwards; 
+}
+@keyframes mlf{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.skills .skill .instso{
+    width: 0%;
+    animation: 2s instso forwards; 
+}
+@keyframes instso{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+.skills .skill .atecnica{
+    width: 0%;
+    animation: 2s atecnica forwards; 
+}
+@keyframes atecnica{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+/* KEYFRAMES SKILLS DESARROLLO */
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards; 
+}
+@keyframes htmlcss{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards; 
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+.skills .skill .wpress{
+    width: 0%;
+    animation: 2s wpress forwards; 
+}
+@keyframes wpress{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+.skills .skill .bd{
+    width: 0%;
+    animation: 2s bd forwards; 
+}
+@keyframes bd{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+/* FIN ESTILOS SKILLS */
+
+/* ESTILOS CURRICULUM */
+/* ESTILOS IZQUIERDA */
+.curriculum {
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    padding: 70px 20px;
+
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;  
+
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+    color:var(--color-secundario);
+}
+.fila{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.curriculum  .fila .col{
+    width: 49%;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+.curriculum  .fila .col h3{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+    color:var(--color-primario);
+    text-align: center;
+    margin-top: 20px;
+}
+.curriculum  .fila .izquierda{
+    border:1px solid rgb(0, 0, 0, .8);
+    padding: 10px;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.curriculum  .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    border-top: 2px solid var(--color-primario);   
+}
+.curriculum  .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--color-secundario);
+}
+.curriculum  .fila .item .instituto{
+    color: var(--color-primario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+.curriculum  .fila .item .fecha{
+    color: var(--color-secundario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+.curriculum  .fila .item .habilidades{
+    color: var(--color-secundario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+
+.curriculum  .fila .item li {
+    line-height: 21px;
+    list-style: none;
+ 
+}
+.curriculum  .fila .item a{
+    text-decoration: none;
+
+}
+
+/* FIN ESTILOS IZQUIERDA */
+
+/* ESTILOS DERECHA */
+
+.curriculum  .fila .derecha{
+    border:1px solid rgb(0, 0, 0, .8);
+    padding: 10px;
+    border-radius: 5px;
+    margin:10px;
+}
+.curriculum  .fila .item .empre {
+    color: var(--color-primario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+.curriculum  .fila .item .cargo{
+    color: var(--color-primario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+.curriculum  .fila .item .funciones{
+    color: var(--color-secundario);
+    font-size: 18px;
+    font-weight:bold;
+    display:block;
+}
+/* FIN ESTILOS DERECHA */
+/* FIN ESTILOS CURRICULUM */
+
+/* ESTILOS CONTACTO*/
+.contacto{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 70px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;  
+
+}
+.contacto .contenido-seccion h2{
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+    color:var(--color-secundario);
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+}
+.contacto .col form{
+    display:block;
+}
+.contacto .col input, .contacto .col textarea{
+    display:block;
+    width: 100%;
+    padding:14px;
+    border: none;
+    margin-bottom: 9px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    border: 2px solid var(--color-secundario);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-secundario);
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+/* FIN ESTILOS CONTACTO*/
+
+/* ESTILOS FOOTER*/
+footer{
+    background-color:var(--color-secundario);
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+footer p{
+    color: var(--color-terciario);
+    
+    padding: 20px;
+}
+footer span{
+    color:var(--color-terciario);
+
+}
+/* FIN ESTILOS FOOTER*/
+
+/* SECCION RESPONSIVE*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav .responsive{
+        display:block;
+        position: absolute;
+        right: 0;
+        top:75;
+        width:180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid var(--color-terciario);
+        padding: 10px 0;
+
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display:block;    
+    } 
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{ 
+        width: 90%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 90%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+        border: none;
+    }
+    .curriculum .fila .izquierda{
+        margin-right: 10px;
+        border: none;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col, form{
+        width: 95%;
+        
+    }
+}
+
+
+

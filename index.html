@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+    <!-- MENU EMCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="">J A F B</a>
+        </div>
+        <nav id="nav" class="responsive">
+          <ul>
+            <li><a href="index.html" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" >
+          <span><i class="fa-solid fa-bars" onclick="mostrarOcultarMenu()"></i></span>
+        </div>
+      </header>
+    </div>
+    <!-- FIN MENU EMCABEZADO -->
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <h1>Jaime A. Fernández B.</h1>
+        <h2>Tècnico en Mantenimiento de Equipos de Computo</h2>
+        <div class="redes">
+          <a target="_blank" href="https://www.linkedin.com/in/jaime-andres-fernandez-burgos-81029595/"  title="Linkedin"><i class="fa-brands fa-linkedin-in" ></i></a>
+          <h2>Tecnólogo en Análisis & Desarrollo de Sistemas de Información</h2>
+        </div>
+      </div>
+    </section>
+    <!-- FIN SECCION INICIO -->
+
+    <!-- SECCION SOBRE MI -->
+    <section class="sobremi" id="sobremi">
+      <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Jaime Fernández </span>Soy junior en el área de desarrollo, egresado del Sena desde el 2018, soy apasionad por el mundo de la tecnología y la música, 
+        manejo diseño páginas webs en WordPress desde hace ya algún tiempo, también manejo html css y JavaScript, 
+        entiendo de bases de datos y tengo conceptos básicos en manejo de Hosting Cpanel y su administración.</p>
+
+      <div class="fila">
+        <!-- DATOS PERSONALES -->
+        <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>
+                    <strong>Cumpleaños</strong>
+                    21-10-1979
+                </li>
+                <li>
+                    <strong>Teléfono</strong>
+                    3166217683
+                </li>
+                <li>
+                    <strong>Email</strong>
+                    jaime7921@hotmail.com
+                </li>
+                <li>
+                    <strong>Web Site</strong>
+                    www.alphatecno.net
+                </li>
+                <li>
+                    <strong>Dirección</strong>
+                    Medellín - Colombia
+                </li>
+            </ul>
+        </div>
+         <!-- INTERESES -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-sharp fa-solid fa-music"></i>
+              <span>Musica</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Tecnologia</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-film"></i>
+              <span>Cine</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-camera"></i>
+              <span>Fotografia</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-tv"></i>
+              <span>Television</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-pen-nib"></i>
+              <span>Diseño</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-solid fa-microphone"></i>
+              <span>Cantar</span>
+            </div>
+
+            <div class="interes">
+              <i class="fa-brands fa-html5"></i>
+              <span>Html</span>
+            </div>
+
+          </div>
+          </div>
+        </div>
+        <button>
+           <a href="descargas/Hoja de vida 2022.pdf" download="Hojadevida"> Descargar CV </a><i class="fa-solid fa-download"></i>
+          <div class="overlay"></div>
+        </button>
+      </div>
+    </section>
+    <!-- FIN SECCION SOBRE MI -->
+
+    <!-- SECCION SKILLS -->
+      <div class="skills" id="skills">
+        <div class="contenido-seccion">
+          <h2>Skills</h2>
+          <div class="fila">
+            <!-- Area Soporte Tecnico Skill-->
+              <div class="col">
+                <h3>Soporte Informático Skills</h3>
+                <div class="skill">
+                  <span>Ensable y Desensamble</span>
+                  <div class="barra-skill">
+                    <div class="progreso ensa">
+                      <span>100%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Mantenimiento Lógico y Físico</span>
+                  <div class="barra-skill">
+                    <div class="progreso mlf">
+                      <span>95%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Instalación de Sistemas Operativos</span>
+                  <div class="barra-skill">
+                    <div class="progreso instso">
+                      <span>95%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Accesoria Técnica</span>
+                  <div class="barra-skill">
+                    <div class="progreso atecnica">
+                      <span>100%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">  
+                <h3>Desarrollo Web Junior Skills</h3>
+                <div class="skill">
+                  <span>Lógica de Algoritmos</span>
+                  <div class="barra-skill">
+                    <div class="progreso htmlcss">
+                      <span>75%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <span>Javascript</span>
+                  <div class="barra-skill">
+                    <div class="progreso javascript">
+                      <span>30%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <span>WordPress</span>
+                  <div class="barra-skill">
+                    <div class="progreso wpress">
+                      <span>85%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <span>Bases de Datos</span>
+                  <div class="barra-skill">
+                    <div class="progreso bd">
+                      <span>50%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- FIN SECCION SKILLS -->
+
+    <!-- SECCION CURRICULUM  -->
+    <section class="curriculum" id="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <!-- ESTUDIOS ACADEMICOS -->
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+                <h4>Técnico en Mantenimiento de Equipos de Computo</h4>
+                <span class="instituto">Servicio Nacional de Aprendizaje (SENA)</span>
+                <span class="fecha">2016 - 2018</span>
+                <span class="habilidades">Habilidades Adquiridas</span>
+                <ul>
+                  <li><span>Ensable y Desensamble</span></li>
+                  <li><span>Mantenimiento Logico y Fisico </span></li>
+                  <li><span>Instalación de Sistemas Operativos </span></li>
+                  <li><span>Asesoria Tecnica</span></li>
+                </ul>
+            </div>
+
+            <div class="item izq">
+              <h4>Tecnología en Análisis y Desarrollo de Sistemas de Información</h4>
+              <span class="instituto">Servicio Nacional de Aprendizaje (SENA)</span>
+              <span class="fecha">2016 - 2018</span>
+              <span class="habilidades">Habilidades Adquiridas</span>
+              <ul>
+                <li><span>Lógica de Algoritmos</span></li>
+                <li><span>Diseño Web</span></li>
+                <li><span>Bases de Datos  </span></li>
+                <li><span>PHP - JAVASCTIPT - JAVA </span></li>
+              </ul>
+          </div>
+          <div class="item izq">
+            <h4>Desarollo Web Junior</h4>
+            <span class="instituto">Instituto Tecnico Metropolitano (IME)</span>
+            <span class="fecha">2022</span>
+            <span class="habilidades">Habilidades Adquiridas</span>
+            <ul>
+              <li><span>HTML - CSS</span></li>
+              <li><span>Ingles Tecnico</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>PHP</span></li>
+            </ul>
+        </div>
+        <div class="item izq">
+          <h4>Desarrollador WordPress</h4>
+          <span class="instituto">Linkeding Learning</span>
+          <span class="fecha">2022</span>
+          <span class="habilidades">Habilidades Adquiridas</span>
+          <ul>
+            <li><span>Desarrollo Web</span></li>
+            <li><span>Desarrollo Front End</span></li>
+            <li><span>WordPress</span></li>
+          </ul>
+          </div>
+        </div>
+        <!-- EXPERIENCIA LABORAL-->
+          <div class="col derecha">
+            <h3>Experiencia</h3>
+            <div class="item der">
+                <h4>Autolatas</h4>
+                <span class="cargo">Gestor Tienda Web</span>
+                <span class="fecha">2019 - 2022</span>
+                <span class="funciones">Funciones</span>
+                <ul>
+                  <li><span>Gestion y Administración del Portal Web</span></li>
+                  <li><span>Mantenimiento, Actualizaciónes y Bacups</span></li>
+                  <li><span>Gestionar Actualizaciones de Productos</span></li>
+                  <li><span>Gestionar la Seguridad del Portal</span></li>
+                </ul>
+            </div>
+
+            <div class="item izq">
+              <h4>Arus</h4>
+              <span class="cargo">Soporte Servicios Set Nivel 2</span>
+              <span class="fecha">2019 - 2021</span>
+              <span class="funciones">Funciones</span>
+              <ul>
+                <li><span>Soporte a usuario final</span></li>
+                <li><span>Instalacion de Sistemas Operativos</span></li>
+                <li><span>Configuracion de Impresoras</span></li>
+                <li><span>Soporte Aplicación de Nomina</span></li>
+              </ul>
+          </div>
+
+          <div class="item izq">
+            <h4>Casalimpia</h4>
+            <span class="cargo">COORDINADOR DE SEDE</span>
+            <span class="fecha">2018 - 2019</span>
+            <span class="funciones">Funciones</span>
+            <ul>
+              <li><span>HTML - CSS</span></li>
+              <li><span>Ingles Tecnico</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>PHP</span></li>
+            </ul>
+        </div>
+
+        <div class="item izq">
+          <h4>Activos</h4>
+          <span class="cargo">Técnico de soporte proyecto Indra sistemas</span>
+          <span class="fecha">2017 - 2018</span>
+          <span class="funciones">Funciones</span>
+          <ul>
+            <li><span>Desarrollo Web</span></li>
+            <li><span>Desarrollo Front End</span></li>
+            <li><span>WordPress</span></li>
+          </ul>
+      </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+      <!-- SECCION CONTACTO -->
+      <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+          <h2>Contacto</h2>
+          <div class="fila">
+            <!-- FORMULARIO -->
+            <div class="col">
+              <form action="">
+              <input type="text" placeholder="Tú Nombre">
+              <input type="text" placeholder="Número Telefónico">
+              <input type="text" placeholder="Dirección de Correo">
+              <input type="text" placeholder="Tema">
+              <textarea name="" id="" cols="30" rows="9" placeholder="Mensaje"></textarea>
+              <button>Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <div class="overlay"></div>
+              </button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECCION CONTACTO -->
+
+       <!-- SECCION FOOTER -->
+       <footer>
+        <p>Medellin - Colombia</p>
+        <span>2022</span>
+       </footer>
+       <script src="js/script.js"></script>
+
+    <!-- INFORMACION ACADEMICA  -->
+
+ 
+
+    <!-- FIN SECCION SOBRE MI -->
+
+
+    <!-- Boton arriba <i class="fa-solid fa-up"></i>-->
+  </body>
+</html>
